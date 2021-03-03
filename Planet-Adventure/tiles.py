@@ -152,7 +152,7 @@ class PortalRoom(MapTile):
     def intro_text(self):
         return """
         You see a bright light in the distance...
-        ... it grows as you get closer! It's sunlight!
+        ... it grows as you get closer! It's a portal to Earth!!!
 
 
         Victory is yours!
