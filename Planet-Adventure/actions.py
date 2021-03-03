@@ -1,4 +1,4 @@
-__author__ = 'Zac Keepers'
+__author__ = 'Zac Keepers and Caleb Durda'
 
 from player import Player
 

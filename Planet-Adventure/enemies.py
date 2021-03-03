@@ -1,4 +1,4 @@
-__author__ = 'Zac Keepers'
+__author__ = 'Zac Keepers and Caleb Durda'
 
 
 class Enemy:
@@ -11,11 +11,11 @@ class Enemy:
         return self.hp > 0
 
 
-class GiantSpider(Enemy):
+class Martian(Enemy):
     def __init__(self):
-        super().__init__(name="Giant Spider", hp=10, damage=2)
+        super().__init__(name="Martian", hp=10, damage=2)
 
 
-class Ogre(Enemy):
+class Dragon(Enemy):
     def __init__(self):
-        super().__init__(name="Ogre", hp=30, damage=15)
+        super().__init__(name="Dragon", hp=30, damage=15)

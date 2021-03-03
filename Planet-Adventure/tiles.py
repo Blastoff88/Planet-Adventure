@@ -1,4 +1,4 @@
-__author__ = 'Zac Keepers'
+__author__ = 'Zac Keepers and Caleb Durda'
 
 import items, enemies, actions, world
 
@@ -37,23 +37,22 @@ class MapTile:
 class StartingRoom(MapTile):
     def intro_text(self):
         return """
-        You find yourself in a cave with a flickering torch on the wall.
+        You find yourself in a on a planet with a thick cloud of fog!
         You can make out four paths.
+        Which way should you go.
         """
 
     def modify_player(self, the_player):
-        #Room has no action on player
         pass
 
 
-class EmptyCavePath(MapTile):
+class EmptyPath(MapTile):
     def intro_text(self):
         return """
         Another featureless part of the cave. You must venture onwards.
         """
 
     def modify_player(self, the_player):
-        #Room has no action on player
         pass
 
 
@@ -69,14 +68,14 @@ class LootRoom(MapTile):
         self.add_loot(the_player)
 
 
-class FindDaggerRoom(LootRoom):
+class FindBlasterRoom(LootRoom):
     def __init__(self, x, y):
-        super().__init__(x, y, items.Dagger())
+        super().__init__(x, y, items.Blaster())
 
     def intro_text(self):
         return """
         You notice something shiny in the corner.
-        It's a dagger! You pick it up.
+        It's a blaster! You pick it up.
         """
 
 
@@ -107,33 +106,33 @@ class EnemyRoom(MapTile):
             return self.adjacent_moves()
 
 
-class GiantSpiderRoom(EnemyRoom):
+class MartianRoom(EnemyRoom):
     def __init__(self, x, y):
-        super().__init__(x, y, enemies.GiantSpider())
+        super().__init__(x, y, enemies.Martian())
 
     def intro_text(self):
         if self.enemy.is_alive():
             return """
-            A giant spider jumps down from its web in front of you!
+            A martian jumps down from a rock in front of you!
             """
         else:
             return """
-            The body of a dead spider lays on the ground.
+            The body of a dead martian lays on the ground.
             """
 
 
-class OgreRoom(EnemyRoom):
+class DragonRoom(EnemyRoom):
     def __init__(self, x, y):
-        super().__init__(x, y, enemies.Ogre())
+        super().__init__(x, y, enemies.Dragon())
 
     def intro_text(self):
         if self.enemy.is_alive():
             return """
-            An ogre is blocking your path!
+            A dragon is blocking your path!
             """
         else:
             return """
-            A dead ogre reminds you of your triumph.
+            A dead dragon reminds you of your triumph.
             """
 
 
@@ -149,7 +148,7 @@ class SnakePitRoom(MapTile):
         player.hp = 0
 
 
-class LeaveCaveRoom(MapTile):
+class PortalRoom(MapTile):
     def intro_text(self):
         return """
         You see a bright light in the distance...

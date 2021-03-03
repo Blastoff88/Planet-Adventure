@@ -2,7 +2,7 @@ import random
 import items, world
 import pickle
 
-__author__ = 'Zac Keepers'
+__author__ = 'Zac Keepers and Caleb Durda'
 
 
 class Player():

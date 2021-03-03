@@ -1,4 +1,4 @@
-__author__ = 'Zac Keepers'
+__author__ = 'Zac Keepers and Caleb Durda'
 
 
 class Item():
@@ -28,10 +28,10 @@ class Rock(Weapon):
                          damage=5)
 
 
-class Dagger(Weapon):
+class Blaster(Weapon):
     def __init__(self):
-        super().__init__(name="Dagger",
-                         description="A small dagger with some rust. Somewhat more dangerous than a rock.",
+        super().__init__(name="Blaster",
+                         description="A small blaster with some rust. Somewhat more dangerous than a rock.",
                          value=10,
                          damage=10)
 

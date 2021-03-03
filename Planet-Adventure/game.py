@@ -1,4 +1,4 @@
-__author__ = 'Zac Keepers'
+__author__ = 'Zac Keepers and Caleb Durda'
 import world
 from player import Player
 from pathlib import Path
@@ -20,7 +20,6 @@ def game_loop(player):
     while player.is_alive() and not player.victory:
         room = world.tile_exists(player.location_x, player.location_y)
         room.modify_player(player)
-        # Check again since the room could have changed the player's state
         if player.is_alive() and not player.victory:
             print("Choose an action:\n")
             available_actions = room.available_actions()
