@@ -7,7 +7,7 @@ Find5GoldRoom	EmptyPath	EmptyPath	StartingRoom	EmptyPath	EmptyPath
 		FindBlasterRoom		EmptyPath	FindBlasterRoom	
 		EmptyPath		EmptyPath	Find5GoldRoom	SnakePitRoom
 Find5GoldRoom	EmptyPath	EmptyPath	MartianRoom	EmptyPath		
-DragonRoom		FindBlasterRoom		FindBlasterRoom		
+DragonRoom		Find5GoldRoom		FindBlasterRoom		
 EmptyPath		EmptyPath		EmptyPath		
 SnakePitRoom		EmptyPath		EmptyPath		
 		DragonRoom	PortalRoom	MartianRoom		

@@ -13,9 +13,9 @@ class Enemy:
 
 class Martian(Enemy):
     def __init__(self):
-        super().__init__(name="Martian", hp=10, damage=2)
+        super().__init__(name="Martian", hp=16, damage=5)
 
 
 class Dragon(Enemy):
     def __init__(self):
-        super().__init__(name="Dragon", hp=30, damage=15)
+        super().__init__(name="Dragon", hp=50, damage=20)

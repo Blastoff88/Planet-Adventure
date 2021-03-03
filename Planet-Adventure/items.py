@@ -20,20 +20,20 @@ class Weapon(Item):
         return "{}\n=====\n{}\nValue: {}\nDamage: {}".format(self.name, self.description, self.value, self.damage)
 
 
-class Rock(Weapon):
+class Pocket_Knife(Weapon):
     def __init__(self):
-        super().__init__(name="Rock",
-                         description="A fist-sized rock, suitable for fighting.",
-                         value=0,
-                         damage=5)
+        super().__init__(name="Pocket_Knife",
+                         description="A pocket-sized knife, suitable for fighting.",
+                         value=5,
+                         damage=10)
 
 
 class Blaster(Weapon):
     def __init__(self):
         super().__init__(name="Blaster",
                          description="A small blaster with some rust. Somewhat more dangerous than a rock.",
-                         value=10,
-                         damage=10)
+                         value=30,
+                         damage=30)
 
 
 class Gold(Item):
