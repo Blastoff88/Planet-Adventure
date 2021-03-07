@@ -18,4 +18,12 @@ class Martian(Enemy):
 
 class Dragon(Enemy):
     def __init__(self):
-        super().__init__(name="Dragon", hp=50, damage=20)
+        super().__init__(name="Dragon", hp=50, damage=15)
+
+class Evil_Psycho_Hippie(Enemy):
+    def __init__(self):
+        super().__init__(name="Evil Psycho Hippie", hp=1000, damage=50)
+
+class Celestial_Knight(Enemy):
+    def __init__(self):
+        super().__init__(name="Celestial Knight", hp=200, damage=25)

@@ -1,13 +1,38 @@
-	SnakePitRoom		DragonRoom		PortalRoom	
-	EmptyPath		EmptyPath		EmptyPath	
-	Find5GoldRoom		FindBlasterRoom		FindBlasterRoom	
-EmptyPath	EmptyPath	EmptyPath	EmptyPath	Find5GoldRoom	EmptyPath	
-PortalRoom			EmptyPath		Find5GoldRoom	
-Find5GoldRoom	EmptyPath	EmptyPath	StartingRoom	EmptyPath	EmptyPath	
-		FindBlasterRoom		EmptyPath	FindBlasterRoom	
-		EmptyPath		EmptyPath	Find5GoldRoom	SnakePitRoom
-Find5GoldRoom	EmptyPath	EmptyPath	MartianRoom	EmptyPath		
-DragonRoom		Find5GoldRoom		FindBlasterRoom		
-EmptyPath		EmptyPath		EmptyPath		
-SnakePitRoom		EmptyPath		EmptyPath		
-		DragonRoom	PortalRoom	MartianRoom		
+											EmptyPath	EmptyPath	EmptyPath	EmptyPath	EmptyPath		
+DragonRoom	DragonRoom	EmptyPath		FindSwordRoom							EmptyPath				EmptyPath		
+		EmptyPath	FindSwordRoom	KnightRoom	FindSwordRoom			SnakePitRoom	EmptyPath	EmptyPath	EmptyPath		SnakePitRoom		EmptyPath		
+HippieRoom	EmptyPath	EmptyPath		EmptyPath						EmptyPath			EmptyPath		EmptyPath		
+	DragonRoom			EmptyPath	EmptyPath	EmptyPath	EmptyPath	EmptyPath		EmptyPath	FindBazookaRoom		EmptyPath	EmptyPath	EmptyPath		
+DragonRoom	EmptyPath							FindBlasterRoom		EmptyPath			EmptyPath				
+	DragonRoom							EmptyPath		EmptyPath	DragonRoom		FindBlasterRoom				
+	EmptyPath	EmptyPath						EmptyPath		EmptyPath		EmptyPath	EmptyPath	EmptyPath	EmptyPath		
+		EmptyPath	FindBazookaRoom	EmptyPath	FindBlasterRoom			EmptyPath	MartianRoom	EmptyPath		EmptyPath			MartianRoom		
+						DragonRoom		Find5GoldRoom			EmptyPath	EmptyPath	EmptyPath	MartianRoom	EmptyPath		
+	SnakePitRoom	EmptyPath				EmptyPath	EmptyPath				Find5GoldRoom		EmptyPath				
+		FindBlasterRoom	EmptyPath	MartianRoom			Find5GoldRoom				EmptyPath		Find5GoldRoom				
+				EmptyPath	EmptyPath			FindBlasterRoom			EmptyPath						
+					EmptyPath				EmptyPath	Find5GoldRoom	EmptyPath						
+					Find5GoldRoom	EmptyPath			EmptyPath			MartianRoom		EmptyPath	FindBlasterRoom	SnakePitRoom	
+		SnakePitRoom				EmptyPath		Find5GoldRoom	EmptyPath					EmptyPath			
+		EmptyPath	FindBlasterRoom				EmptyPath		EmptyPath	FindBlasterRoom				FindBazookaRoom			
+			EmptyPath	EmptyPath		MartianRoom	EmptyPath	FindBlasterRoom	StartingRoom				EmptyPath	EmptyPath	EmptyPath	DragonRoom	EmptyPath
+				Find5GoldRoom					EmptyPath		EmptyPath	Find5GoldRoom	EmptyPath		DragonRoom		DragonRoom
+	DragonRoom	EmptyPath		EmptyPath				EmptyPath	EmptyPath	Find5GoldRoom	EmptyPath						
+		FindBlasterRoom	MartianRoom	EmptyPath			EmptyPath			EmptyPath				Find5GoldRoom	EmptyPath	HippieRoom	EmptyPath
+				EmptyPath			Find5GoldRoom			MartianRoom				EmptyPath			EmptyPath
+				EmptyPath	DragonRoom		EmptyPath		FindBlasterRoom	EmptyPath			EmptyPath	MartianRoom		DragonRoom	DragonRoom
+		Find5GoldRoom	EmptyPath	EmptyPath	EmptyPath	EmptyPath	EmptyPath		EmptyPath			DragonRoom	EmptyPath				EmptyPath
+					EmptyPath		EmptyPath		EmptyPath			EmptyPath					EmptyPath
+				EmptyPath	EmptyPath		EmptyPath		MartianRoom		EmptyPath	EmptyPath			FindSwordRoom		EmptyPath
+			FindBlasterRoom	Find5GoldRoom			Find5GoldRoom		EmptyPath		EmptyPath		EmptyPath	EmptyPath	KnightRoom	FindSwordRoom	EmptyPath
+		Find5GoldRoom	EmptyPath						EmptyPath		FindBlasterRoom		EmptyPath		FindSwordRoom		
+SnakePitRoom	EmptyPath	EmptyPath							FindBlasterRoom	EmptyPath	EmptyPath		EmptyPath	EmptyPath			
+		EmptyPath	MartianRoom				DragonRoom		EmptyPath		Find5GoldRoom	EmptyPath		EmptyPath	EmptyPath		
+		EmptyPath	EmptyPath	EmptyPath			Find5GoldRoom					EmptyPath	FindBlasterRoom		EmptyPath		
+		EmptyPath		EmptyPath	EmptyPath		EmptyPath						EmptyPath	EmptyPath	EmptyPath		
+		EmptyPath	EmptyPath		EmptyPath	EmptyPath	EmptyPath	EmptyPath	Find5GoldRoom	EmptyPath			SnakePitRoom				
+	FindSwordRoom		EmptyPath			EmptyPath		EmptyPath		EmptyPath							
+FindSwordRoom	KnightRoom	EmptyPath	EmptyPath		Find5GoldRoom	EmptyPath		EmptyPath		MartianRoom							
+	FindSwordRoom			EmptyPath	FindBazookaRoom			EmptyPath									
+EmptyPath	EmptyPath		Find5GoldRoom					SnakePitRoom									
+EmptyPath	DragonRoom		EmptyPath	EmptyPath	SnakePitRoom												

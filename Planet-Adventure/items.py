@@ -31,10 +31,23 @@ class Pocket_Knife(Weapon):
 class Blaster(Weapon):
     def __init__(self):
         super().__init__(name="Blaster",
-                         description="A small blaster with some rust. Somewhat more dangerous than a rock.",
+                         description="A small blaster with some rust. Somewhat more dangerous than a Pocket Knife.",
                          value=30,
-                         damage=30)
+                         damage=25)
 
+class Laser_Bazooka(Weapon):
+    def __init__(self):
+        super().__init__(name="Laser Bazooka",
+                         description="A freshly made giant bazooka, that has the ultimate power.",
+                         value=250,
+                         damage=100)
+
+class Celestial_Sword(Weapon):
+    def __init__(self):
+        super().__init__(name="Celestial Sword",
+                         description="The lost sword of the Celestial Knight, that has the power of the cosmos!",
+                         value=1000,
+                         damage=500)
 
 class Gold(Item):
     def __init__(self, amt):

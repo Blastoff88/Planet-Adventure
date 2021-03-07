@@ -37,7 +37,7 @@ class MapTile:
 class StartingRoom(MapTile):
     def intro_text(self):
         return """
-        You find yourself in a on a planet with a thick cloud of fog!
+        You find yourself on a planet with a thick cloud of fog!
         You can make out four paths.
         Which way should you go.
         """
@@ -49,7 +49,7 @@ class StartingRoom(MapTile):
 class EmptyPath(MapTile):
     def intro_text(self):
         return """
-        Another featureless part of the cave. You must venture onwards.
+        Another featureless part of the planet. You must venture onwards.
         """
 
     def modify_player(self, the_player):
@@ -74,8 +74,28 @@ class FindBlasterRoom(LootRoom):
 
     def intro_text(self):
         return """
-        You notice something shiny in the corner.
+        You notice something shiny in the corner of a cliff.
         It's a blaster! You pick it up.
+        """
+
+class FindSwordRoom(LootRoom):
+    def __init__(self, x, y):
+        super().__init__(x, y, items.Celestial_Sword())
+
+    def intro_text(self):
+        return """
+        You see a bright light coming from a rock,
+        It's the Celestial Sword, that has the power of the cosmos!
+        """
+
+class FindBazookaRoom(LootRoom):
+    def __init__(self, x, y):
+        super().__init__(x, y, items.Laser_Bazooka())
+
+    def intro_text(self):
+        return """
+        You notice something shiny and giant laying next to a rock.
+        It's a Laser Bazooka! You pick it up.
         """
 
 
@@ -133,6 +153,34 @@ class DragonRoom(EnemyRoom):
         else:
             return """
             A dead dragon reminds you of your triumph.
+            """
+
+class KnightRoom(EnemyRoom):
+    def __init__(self, x, y):
+        super().__init__(x, y, enemies.Celestial_Knight())
+
+    def intro_text(self):
+        if self.enemy.is_alive():
+            return """
+            The Celestial Knight is blocking your path!
+            """
+        else:
+            return """
+            The dead Knight reminds you of your success!
+            """
+
+class HippieRoom(EnemyRoom):
+    def __init__(self, x, y):
+        super().__init__(x, y, enemies.Evil_Psycho_Hippie())
+
+    def intro_text(self):
+        if self.enemy.is_alive():
+            return """
+            The King of the planet, the Evil Psycho Hippie, is blocking your path!
+            """
+        else:
+            return """
+            A dead King reminds you of your victory!
             """
 
 
