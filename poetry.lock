@@ -1,0 +1,16 @@
+[[package]]
+category = "main"
+description = "Python Wait Utilities"
+name = "wait"
+optional = false
+python-versions = "*"
+version = "0.0.3"
+
+[metadata]
+content-hash = "9df5e73157325be10d6dbb0f4e9bd1b808199861aee8400302a5a7f4503784c2"
+python-versions = "^3.8"
+
+[metadata.files]
+wait = [
+    {file = "wait-0.0.3.tar.gz", hash = "sha256:0eac805979a62f1c12a325d0f99c1563ee0773be1ced2017b308629d27cc7d70"},
+]
