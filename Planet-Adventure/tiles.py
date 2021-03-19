@@ -28,6 +28,7 @@ class MapTile:
 
     def available_actions(self):
         moves = self.adjacent_moves()
+        moves.append(actions.GoToSpaceStation())
         moves.append(actions.ViewInventory())
         moves.append(actions.SaveAndExit())
 
@@ -101,13 +102,13 @@ class FindBazookaRoom(LootRoom):
 
 class Find5GoldRoom(LootRoom):
     def __init__(self, x, y):
-        super().__init__(x, y, items.Gold(5))
-
+        super().__init__(x, y, items.Data())
     def intro_text(self):
+        items.data.coins = items.data.coins + 5
         return ("""
         Someone dropped 5 gold pieces. You pick them up.
         """)
-
+    
 
 class EnemyRoom(MapTile):
     def __init__(self, x, y, enemy):
@@ -117,7 +118,7 @@ class EnemyRoom(MapTile):
     def modify_player(self, the_player):
         if self.enemy.is_alive():
             the_player.hp = the_player.hp - self.enemy.damage
-            return("Enemy does {} damage. You have {} HP remaining.".format(self.enemy.damage, the_player.hp))
+            print("Enemy does {} damage. You have {} HP remaining.".format(self.enemy.damage, the_player.hp))
 
     def available_actions(self):
         if self.enemy.is_alive():

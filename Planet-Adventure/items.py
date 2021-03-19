@@ -35,6 +35,27 @@ class Blaster(Weapon):
                          value=30,
                          damage=25)
 
+class Martian_Katana(Weapon):
+    def __init__(self):
+        super().__init__(name="Martian Katana",
+                         description="A sharp curved blade once wielded by martians.",
+                         value=45,
+                         damage=450)
+
+class Acid_Grenade(Weapon):
+    def __init__(self):
+        super().__init__(name="Acid Grenade",
+                         description="A grenade that shoots out deadly acid instead of small metal pieces.",
+                         value=85,
+                         damage=750)
+
+class Air_Pollution(Weapon):
+    def __init__(self):
+        super().__init__(name="Air Pollution",
+                         description="The best weapon in the game!!!",
+                         value=135,
+                         damage=1000)
+
 class Laser_Bazooka(Weapon):
     def __init__(self):
         super().__init__(name="Laser Bazooka",
@@ -55,3 +76,10 @@ class Gold(Item):
         super().__init__(name="Gold",
                          description="A round coin made out of gold".format(str(self.amt)),
                          value=self.amt)
+
+
+class Data():
+	def __init__(self):
+		self.coins = 0
+
+data = Data()

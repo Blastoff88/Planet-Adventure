@@ -38,6 +38,9 @@ class ViewInventory(Action):
     def __init__(self):
         super().__init__(method=Player.print_inventory, name='View inventory', hotkey='i')
 
+class GoToSpaceStation(Action):
+    def __init__(self):
+        super().__init__(method=Player.go_to_space_station, name='Warp to Space Station', hotkey='h')
 
 class Attack(Action):
     def __init__(self, enemy):
